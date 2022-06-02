@@ -32,17 +32,24 @@ class Starters {
             $('<div>', {
                 class:"card",
                 id: pokemon.name,
-                text: pokemon.name,
             }).appendTo('.starters');
+
+            //adds name to cards
+            $("body").find('#' + pokemon.name).prepend(
+                $('<p>', {
+                    id: "pokemon-name",
+                    text: pokemon.name,
+                })
+            );
 
             //adds sprites to cards
             $("body").find('#' + pokemon.name).prepend(
-            $('<img/>', {
-                class: "select-sprite",
-                id: pokemon.name + "-sprite",
-                src: pokemon.sprite,
-                })
-            );
+                $('<img/>', {
+                    class: "select-sprite",
+                    id: pokemon.name + "-sprite",
+                    src: pokemon.sprite,
+                    })
+                );
 
             //add types to cards
                 // dual-types
@@ -63,6 +70,18 @@ class Starters {
         });
     }
 };
+
+
+// SELECT STARTER
+    //BULBASAUR
+$(".starters").on("click", ".card", function(){
+    let select = $(this).attr("id");
+    $(".card").hide();
+    alert("You selected " + select + "!");
+});
+
+
+
 
 const playerPokemon = new Starters;
 playerPokemon.makeStarters(pokemon);
