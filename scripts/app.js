@@ -16,15 +16,19 @@ const pokemon = [
     }
 ];
 
-class Cards {
+class Starters {
     constructor(name){
         this.name;
         this.type;
     }
 
-    makeCards = function makeCards(data){
+    makeStarters = function makeStarters(data){
         data.forEach(pokemon => {
-            console.log(pokemon.name);
+            $('<div>',{
+                id: pokemon.name,
+                text: pokemon.name,
+            }).appendTo('.starters');
+
             console.log(pokemon.type[0]);
             if (pokemon.type[1] != null){
                 console.log(pokemon.type[1]);
@@ -33,6 +37,5 @@ class Cards {
     }
 };
 
-const playerPokemon = new Cards;
-playerPokemon.makeCards(pokemon);
-
+const playerPokemon = new Starters;
+playerPokemon.makeStarters(pokemon);
