@@ -78,10 +78,16 @@ $(".starters").on("click", ".card", function(){
     let select = $(this).attr("id");
     $(".card").hide();
     alert("You selected " + select + "!");
+    startGame();
 });
 
+function startGame(){
+    console.log("[ Game is in development ]");
+    $('<h1>', {
+        text: "[ Game is in development ]",
+    }).appendTo('.starters');
 
-
+}
 
 const playerPokemon = new Starters;
 playerPokemon.makeStarters(pokemon);
