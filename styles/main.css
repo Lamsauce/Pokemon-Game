@@ -19,6 +19,7 @@ h1 {
     padding: 15px;
     box-shadow: 0px 3px 5px 3px rgb(115, 115, 115);
     text-align: center;
+    color: white;
 }
 
 .card:hover{
@@ -28,21 +29,36 @@ h1 {
     cursor: pointer;
 }
 
-#BULBASAUR-sprite {
+#BULBASAUR {
     background-color: green;
+}
+
+#CHARMANDER {
+    background-color: red;
+}
+
+#SQUIRTLE {
+    background-color: blue;
+}
+
+#BULBASAUR-sprite {
+    background-color: white;
     overflow: hidden;
     padding: 40px;
     height: 300px;
+    border-radius: 10px;
 }
 
 #CHARMANDER-sprite {
-    background-color: red;
+    background-color: white;
     overflow: hidden;
     padding: 15px;
+    border-radius: 10px;
 }
 
 #SQUIRTLE-sprite {
-    background-color: blue;
+    background-color: white;
     overflow: hidden;
     padding: 50px;
+    border-radius: 10px;
 }
