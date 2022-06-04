@@ -1,15 +1,14 @@
-header {
-    color: white;
-}
-
-.starters{
-    margin: auto;
-    max-width: fit-content;
-}
+/* =============== CSS SELECTORS =============== */
 
 h1 {
     padding-top: 20px;
 }
+
+header {
+    color: white;
+}
+
+/* =============== CLASSES =============== */
 
 .card {
     width: 18rem;
@@ -29,16 +28,15 @@ h1 {
     cursor: pointer;
 }
 
+.starters{
+    margin: auto;
+    max-width: fit-content;
+}
+
+/* =============== IDs =============== */
+
 #BULBASAUR {
     background-color: green;
-}
-
-#CHARMANDER {
-    background-color: red;
-}
-
-#SQUIRTLE {
-    background-color: blue;
 }
 
 #BULBASAUR-sprite {
@@ -46,19 +44,27 @@ h1 {
     overflow: hidden;
     padding: 40px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+#CHARMANDER {
+    background-color: red;
 }
 
 #CHARMANDER-sprite {
     background-color: white;
     overflow: hidden;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+#SQUIRTLE {
+    background-color: blue;
 }
 
 #SQUIRTLE-sprite {
     background-color: white;
     overflow: hidden;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
